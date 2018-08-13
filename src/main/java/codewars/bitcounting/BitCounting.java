@@ -1,10 +1,11 @@
 package codewars.bitcounting;
 
-public class BitCounting {
+class BitCounting {
 
-    public static int countBits(int n) {
-        // Show me the code!
-        return 0;
+    static int countBits(int n) {
+        return Integer.toBinaryString(n)
+                .replace("0", "")
+                .length();
     }
 
 }
