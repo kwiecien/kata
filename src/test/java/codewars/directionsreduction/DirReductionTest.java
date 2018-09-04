@@ -14,4 +14,12 @@ public class DirReductionTest {
                 new String[]{},
                 DirReduction.dirReduc(new String[]{"NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"}));
     }
+
+    @Test
+    public void test2() {
+        assertArrayEquals("\"EAST\", \"EAST\", \"WEST\", \"NORTH\", \"WEST\", \"EAST\", \"EAST\", \"SOUTH\", \"NORTH\", \"WEST\"",
+                new String[]{"EAST", "NORTH"},
+                DirReduction.dirReduc(new String[]{"EAST", "EAST", "WEST", "NORTH", "WEST", "EAST", "EAST", "SOUTH", "NORTH", "WEST"}));
+    }
+
 }
