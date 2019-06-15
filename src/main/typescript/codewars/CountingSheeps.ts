@@ -3,3 +3,7 @@ export function countSheeps(arrayOfSheep: boolean[]) {
         return sheep
     }).length
 }
+
+export function countSheeps2(arrayOfSheep: boolean[]) {
+    return arrayOfSheep.filter(Boolean).length
+}
